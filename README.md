@@ -212,7 +212,7 @@ See below for more details on the placeholder syntax.
 The terminal output of commands run from parallel threads using `-x` will not be interlaced or garbled,
 so `fd -x` can be used to rudimentarily parallelize a task run over many files.
 An example of this is calculating the checksum of each individual file within a directory.
-```
+``` bash
 fd -tf -x md5sum > file_checksums.txt
 ```
 
